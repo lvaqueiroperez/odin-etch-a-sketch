@@ -31,3 +31,7 @@ body {
     background-color: navajowhite;
     margin: 5px;
 }
+
+.square:hover {
+    background-color: rgb(85, 84, 83);
+}
