@@ -11,12 +11,8 @@ resizeButton.addEventListener("click", () => {
 
     if (gridDimensions && gridDimensions >= 0 && gridDimensions <= 100) {
 
-        // remove current grid and create the new one
-        const containersToRemove = document.querySelectorAll(".squareContainer");
-        containersToRemove.forEach((container) => container.remove());
-
+        removeGrid();
         printGrid(gridDimensions);
-
 
     } else {
         alert("ERROR. Please enter a correct value!");
@@ -40,3 +36,8 @@ function printGrid(gridDimensions) {
 
     }
 };
+
+function removeGrid() {
+    const containersToRemove = document.querySelectorAll(".squareContainer");
+    containersToRemove.forEach((container) => container.remove());
+}
