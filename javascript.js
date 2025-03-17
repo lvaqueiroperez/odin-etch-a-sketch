@@ -2,12 +2,19 @@ const squaresMainContainer = document.querySelector(".squaresMainContainer");
 
 const resizeButton = document.querySelector("#resizeButton");
 
-let gridDimensions = 16;
+printGrid(16);
+
+
 
 resizeButton.addEventListener("click", () => {
-    gridDimensions = +prompt("Please, enter the number of squares per row that you wish to see (max 100):", "");
+    const gridDimensions = +prompt("Please, enter the number of squares per row that you wish to see (max 100):", "");
 
     if (gridDimensions && gridDimensions >= 0 && gridDimensions <= 100) {
+        
+        // remove current grid and create the new one
+        const containersToRemove = document.querySelectorAll(".squareContainer");
+        containersToRemove.forEach((container) => container.remove());
+
 
 
 
