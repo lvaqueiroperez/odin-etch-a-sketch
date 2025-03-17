@@ -1,7 +1,6 @@
-const squaresMainContainer = document.querySelector("#squaresMainContainer");
+const squaresMainContainer = document.querySelector(".squaresMainContainer");
 
 for (let i = 0; i < 128; i++) {
-
     const squareContainer = document.createElement("div");
     const squareDiv1 = document.createElement("div");
     const squareDiv2 = document.createElement("div");
