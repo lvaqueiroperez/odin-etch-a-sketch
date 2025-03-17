@@ -3,7 +3,16 @@ const squaresMainContainer = document.querySelector(".squaresMainContainer");
 const resizeButton = document.querySelector("#resizeButton");
 
 resizeButton.addEventListener("click", () => {
-    const squaresPerRow = +prompt("Please, enter the number of squares per row that you wish to see (max 100):", "");
+    const gridDimensions = +prompt("Please, enter the number of squares per row that you wish to see (max 100):", "");
+
+    if(gridDimensions && gridDimensions >=0 && gridDimensions <=100) {
+
+      
+
+    } else {
+        alert("ERROR. Please enter a correct value!");
+    }
+
 });
 
 // 16x16 grid, 256 squares in total
