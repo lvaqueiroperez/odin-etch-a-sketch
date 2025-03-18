@@ -10,7 +10,7 @@ printGrid(16);
 resizeButton.addEventListener("click", () => {
     const gridDimensions = +prompt("Please, enter the number of squares per row that you wish to see (max 100):", "");
 
-    if (gridDimensions && gridDimensions >= 0 && gridDimensions <= 100) {
+    if (!isNaN(gridDimensions) && gridDimensions >= 0 && gridDimensions <= 100) {
 
         removeGrid();
         printGrid(gridDimensions);
