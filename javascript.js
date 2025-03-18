@@ -21,6 +21,13 @@ resizeButton.addEventListener("click", () => {
 
 });
 
+// use event delegation
+squaresMainContainer2.addEventListener("mouseover", (e) => {
+    if (e.target.className === "square") {
+        e.target.style.backgroundColor = "black";
+    }
+});
+
 function printGrid(gridDimensions) {
     for (let i = 0; i < gridDimensions; i++) {
 
