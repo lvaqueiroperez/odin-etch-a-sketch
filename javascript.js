@@ -24,7 +24,7 @@ resizeButton.addEventListener("click", () => {
 // use event delegation, make it paint only when clicked
 squaresMainContainer2.addEventListener("mouseover", (e) => {
     if (e.target.className === "square") {
-        e.target.style.backgroundColor = "black";
+        e.target.style.backgroundColor = `rgb(${Math.round((Math.random() * 255))}, ${Math.round((Math.random() * 255))}, ${Math.round((Math.random() * 255))})`;
     }
 });
 
