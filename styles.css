@@ -28,17 +28,21 @@ button {}
     width: 800px;
     background-color: rgb(160, 200, 235);
     gap: 5px;
+    flex: 0 1 auto;
+    margin: 0 auto;
 }
 
 .squareContainer {
     display: flex;
     gap: 5px;
+    flex: 0 1 auto;
 }
 
 .square {
     width: 20px;
     height: 20px;
     background-color: navajowhite;
+    flex: 0 1 auto;
 }
 
 .square:hover {
