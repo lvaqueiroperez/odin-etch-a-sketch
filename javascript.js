@@ -1,4 +1,7 @@
 const squaresMainContainer = document.querySelector(".squaresMainContainer");
+const squaresMainContainer2 = document.createElement("div");
+squaresMainContainer2.setAttribute("class", "squaresMainContainer2");
+squaresMainContainer.appendChild(squaresMainContainer2);
 
 const resizeButton = document.querySelector("#resizeButton");
 
@@ -32,7 +35,7 @@ function printGrid(gridDimensions) {
             squareContainer.appendChild(squareDiv);
         }
 
-        squaresMainContainer.appendChild(squareContainer);
+        squaresMainContainer2.appendChild(squareContainer);
 
     }
 };
