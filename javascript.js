@@ -7,8 +7,6 @@ const resizeButton = document.querySelector("#resizeButton");
 
 printGrid(16);
 
-
-
 resizeButton.addEventListener("click", () => {
     const gridDimensions = +prompt("Please, enter the number of squares per row that you wish to see (max 100):", "");
 
