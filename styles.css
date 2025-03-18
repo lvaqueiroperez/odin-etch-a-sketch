@@ -27,18 +27,18 @@ button {}
     height: 800px;
     width: 800px;
     background-color: rgb(160, 200, 235);
+    gap: 5px;
 }
 
 .squareContainer {
     display: flex;
+    gap: 5px;
 }
 
 .square {
     width: 20px;
     height: 20px;
-    border: 1px solid black;
     background-color: navajowhite;
-    margin: 5px;
 }
 
 .square:hover {
