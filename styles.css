@@ -18,6 +18,14 @@ body {
     gap: 10px;
 }
 
+.resizeButtonContainer {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    flex: 0 1 auto;
+    margin: 0 auto;
+}
+
 button {}
 
 .squaresMainContainer {
